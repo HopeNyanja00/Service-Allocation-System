@@ -1,0 +1,178 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+body {
+    font-family: 'Muli', sans-serif; 
+    background-image: url('images/toyota.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/*Navigation bar styling*/
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f12f2f;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'muli', sans-serif;
+    font-size: 20px;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #797676;
+}
+
+.active {
+    background-color: rgb(187, 181, 181);
+}
+
+
+/*Registration styling*/
+
+/* Add padding to containers */
+
+form{
+    width: 60%;
+    margin-left: 450px;
+    text-align: center;
+
+}
+
+.container {
+    margin-top: 50px;
+    padding: 16px;
+    background-color: rgb(211, 203, 203);
+    width: 50%;
+    border-radius: 20px;
+    
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 20px;
+    text-align: center;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: #f80404;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+/*Services Styling*/
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+    width: 20%;
+    margin-left: 100px;
+    
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+    background-color: red;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+.button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
